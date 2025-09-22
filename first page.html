@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fit-Oasis Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    card {
+      background-color: #1a1a1a;
+      border: none;
+      border-radius: 12px;
+      color: #fff;
+    }
+    .highlight-box {
+      background-color: #ff6600;
+      color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .highlight-box i {
+      font-size: 20px;
+      margin-right: 8px;
+    }
+    .subscription, .trending img {
+      border-radius: 10px;
+      width: 100%;
+    }
+    .calendar {
+      background-color: #222;
+      padding: 15px;
+      border-radius: 12px;
+    }
+    .pie-chart {
+      width: 120px;
+      height: 120px;
+      background: conic-gradient(#ff6600 40%, #444 60%);
+      border-radius: 50%;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid p-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8">
+      <h4>Fit-Oasis</h4>
+      <div class="card p-3 mb-3">
+        <h5>Hello! <span class="text-warning">Yedidyah Cherub</span></h5>
+        <div class="row">
+          <div class="col-md-8">
+            <h6 class="mb-2">Workout Activities</h6>
+            <canvas id="workoutChart"></canvas>
+          </div>
+          <div class="col-md-4">
+            <div class="highlight-box">2.2 L <br><small>Water Litres</small></div>
+            <div class="highlight-box">2.45 <br><small>Kilo Calories</small></div>
+            <div class="highlight-box">124 <br><small>Beats/min</small></div>
+            <div class="highlight-box">13 <br><small>Hours Slept</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card p-3 mb-3">
+            <h6>Subscription</h6>
+            <p>Active Plan: <b>Fit-Oasis Silver</b><br>Special · 3 Months</p>
+            <img src="Fitness Website/dashboard subscription image.png" class="subscription">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="card p-3 mb-3">
+            <h6>Most Trending</h6>
+            <div class="row g-2">
+              <div class="col-4"><img src="Fitness Website/dashboard trending image 1.png" class="trending"></div>
+              <div class="col-4"><img src="Fitness Website/dashboard trending image 2.png" class="trending"></div>
+              <div class="col-4"><img src="Fitness Website/dashboard trending image 3.png" class="trending"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="card p-3 mb-3 text-center">
+        <img src="Fitness Website/dashboard profile picture.png"rounded-circle mb-2">
+        <h6>Yedidyah Cherub</h6>
+        <p>30 years old<br>Height: 5.7 inches<br>Weight: 58 kgs<br>Gender: Male</p>
+        <p class="text-warning">Enrolled On: Jan 12, 2025<br>Expiry: Mar 24, 2025</p>
+      </div>
+
+      <div class="card p-3 mb-3">
+        <h6>Attendance</h6>
+        <div class="calendar mb-3">
+          <p class="text-center">March 2025</p>
+          <p class="text-muted text-center">[Calendar UI here]</p>
+        </div>
+        <div class="pie-chart"></div>
+        <p class="text-center mt-2">
+          <span class="text-warning">■</span> Present 
+          <span class="text-light ms-2">■</span> Absent
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap & Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('workoutChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+      datasets: [{
+        label: 'Equipment Usage',
+        data: [5, 7, 6, 9, 6, 8, 7],
+        borderColor: '#ccc',
+        fill: false
+      },
+      {
+        label: 'Exercise',
+        data: [6, 5, 8, 6, 7, 5, 6],
+        borderColor: '#ff6600',
+        fill: false
+      }]
+    }
+  });
+</script>
+
+</body>
+</html>
+
