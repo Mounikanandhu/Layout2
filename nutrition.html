@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fit-Oasis Nutrition</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Hero section background */
+    .hero-section {
+      background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 150px 20px;
+      position: relative;
+    }
+
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      /* Dark overlay */
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn-orange {
+      background-color: #f26101;
+      border: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .btn-orange:hover {
+      background-color: #d94f00;
+    }
+
+    .section-dark {
+      background-color: #111;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    
+    footer {
+      background: #000;
+      padding: 40px 0;
+      font-size: 14px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">FIT–OASIS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+          <li class="nav-item"><a class="nav-link active" href="nutrition.html">Nutrition</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="col-md-5"><img src="Fitness Website/hero nutrition image.png" alt=""></div>
+    <div class="hero-content">
+      <h1 class="fw-bold">FIT–OASIS DO PROVIDE A CUSTOMIZED NUTRITION PLAN</h1>
+      <a href="#" class="btn btn-orange btn-lg mt-4">SAMPLE NUTRITION PLAN</a>
+    </div>
+  </section>
+  <!-- Nutrition Section -->
+  <section class="section-dark">
+    <div class="container">
+      <h2 class="fw-bold">FIT–OASIS NUTRITION</h2>
+      <p class="mt-3 fs-5">Helping You Indentify the Perfect Diet</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="section-dark">
+    <div class="container">
+      <div class="d-flex justify-content-evenly">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Fitness Website/image 1-nutrition.png" class="d-block w-10" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Fitness Website/image 2-nutrition.png" class="d-block w-10" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Fitness Website/image 3-nutrition.png" class="d-block w-10" alt="...">
+            </div>
+          </div>
+        </div>
+        <!-- Right Content -->
+        <div class="col-md-8">
+          <h5 class="bg-secondary text-white p-2 rounded">➖ Try something unique</h5>
+          <p class="mt-3">
+            Diets don’t work. They are motivated by guilt and shackle you with extreme limitations.
+            You make superhuman efforts to commit, and yet, it doesn’t pay off.
+            There has to be a better, convenient way, right?
+          </p>
+          <p>
+            Fit-Oasis Nutrition is a "reverse-engineered" approach to dieting.
+            We identified failure points and incorporated proven methods, enabling us
+            to dig deep into a person's lifestyle to create a plan with complete food freedom.
+            The results? Short- and long-term success for all kinds of people with all sorts of goals.
+          </p>
+
+          <!-- Accordion -->
+          <div class="accordion" id="nutritionAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne">
+                  ➕ Who is this for? Well, for everyone!
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#nutritionAccordion">
+                <div class="accordion-body">
+                  This program is suitable for beginners, fitness enthusiasts, and anyone looking for a balanced
+                  lifestyle.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mt-2">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo">
+                  ➕ Coaching
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#nutritionAccordion">
+                <div class="accordion-body">
+                  Personalized coaching sessions help you stay motivated and on track with your nutrition plan.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Apply Button -->
+          <button class="btn btn-orange mt-4">APPLY NOW</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Fuel-Up Section -->
+  <section class="section-dark">
+    <div class="container">
+      <h2>FUEL-UP</h2>
+      <p class="fs-5">In-house Health bar and Customizable shakes</p>
+
+      <h5 class="mt-5">YOU FEEL BETTER WHEN YOU FUEL BETTER</h5>
+      <p>With the Fuel Up, you'll find everything from performance enhancers to muscle recovery.
+        Refresh and rebuild with customizable shakes or grab an energy bite on your way out!</p>
+
+      <div class="row text-start mt-5">
+        <div class="col-md-4">
+          <h6 class="fw-bold">MUSCLE REPAIR</h6>
+          <p>Variety of protein sources to ensure you get the right amount for your body.
+            Whether it be whey isolate, vegan or egg white!</p>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-bold">DECREASE SORENESS</h6>
+          <p>Packing your post-workout shake with protein and carbohydrates can help to
+            decrease delayed onset muscle soreness.</p>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-bold">STAY ON TRACK</h6>
+          <p>Everyone has different needs, so we offer a variety of options to suit your preferences.
+            With add-ons best for YOU!</p>
+        </div>
+      </div>
+
+      <!-- Menu Section -->
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <div class="menu-item">
+            <span class="name">Skinny Shake</span>
+            <span>₹ 120</span>
+          </div>
+          <p class="small">Blueberries, Banana, Cinnamon, Almond Milk or Low-Fat milk, Whey isolates</p>
+
+          <div class="menu-item">
+            <span class="name">Elevacious</span>
+            <span>₹ 150</span>
+          </div>
+          <p class="small">Whey (Vanilla, Chocolate, Strawberry), Almond Milk, Greek Yogurt, Oats, Banana</p>
+        </div>
+
+        <div class="col-md-6">
+          <div class="menu-item">
+            <span class="name">Chocolacious</span>
+            <span>₹ 140</span>
+          </div>
+          <p class="small">Almond Milk, Whey Chocolate flavor, Cocoa Powder, Peanut Butter</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+
+        <!-- Left -->
+        <div class="col-md-4">
+          <h5>FIT-OASIS</h5>
+          <p>Fit-Oasis is a comprehensive fitness institute, which brings you the best gym experience in the Tamilnadu
+          </p>
+          <p>The Gym you call Home</p>
+          <p><a href="#" class="text-white text-decoration-none">Terms & conditions</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Privacy policy</a></p>
+          <p class="mt-3">© Fit-Oasis. All Rights Reserved</p>
+        </div>
+
+        <!-- Middle -->
+        <div class="col-md-4">
+          <h5>Location:</h5>
+          <p>South Street, Fairlands<br>Salem, Tamilnadu<br>India - 636 302</p>
+          <h5>Contact us:</h5>
+          <p>Phone: +91 123457890<br>Email: info@fitoasis.com</p>
+        </div>
+
+        <!-- Right -->
+        <div class="col-md-4">
+          <h5>OUR TIMINGS</h5>
+          <p>Sunday to Saturday<br>5:30am to 10pm</p>
+          <p>Maintenance<br>Every afternoon<br>1.00pm to 2.00pm</p>
+          <div class="social-icons mt-3">
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-tiktok"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS & Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+
+</html>

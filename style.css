@@ -1,0 +1,54 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222; /* Dark background */
+  padding: 15px 50px;
+  @
+}
+
+/* Logo text */
+nav .logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Nav links */
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Link style */
+nav .nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+nav .nav-links li a:hover {
+  color: #ff9800; /* Orange hover color */
+  border-bottom: 2px solid #ff9800;
+  padding-bottom: 3px;
+}
+
+/* Page sections */
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
